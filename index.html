@@ -1,104 +1,125 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-    <title>mxcl</title>
-    <meta charset="utf-8"> 
+<head>
+    <title>Hack in Rio</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300">
     <style>
-      html {
-        background: #EF645E;
-        color: white;
-        font-family: 'Raleway', sans-serif;
-        text-transform: uppercase;
-      }
-      h1 {
-        background: #E9423A;
-        border-radius: 0.3rem;
-        padding: 0.3rem 0.5rem;
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        margin: 0;
-      }
-      .clover {
-        height: 2.9rem;
-        width: 2.9rem;
-        margin: 0.1rem 1.1rem;
-      }
-      #top * {
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 5rem;
-      }
-      #bop {
-        margin-top: 0.8rem;
-        font-size: 0.85rem;
-      }
-      #fop {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2rem;
-        padding-bottom: 1rem;
-        transform: scale(0.75,0.75);
-      }
-      #fop img {
-        height: 2rem;
-        margin: 0 0.6rem;
-      }
-      #fop img#twitter {
-        height: 1.5rem;
-        margin-bottom: 0.25rem;
-      }
-      .dot:before {
-        content: " / ";
-        color: #E9423A;
-      }
-      @media (max-width: 321px) {
+        html {
+            /* google material color: purple 300 */
+            background: #BA68C8;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            /* google material color: purple 500 */
+            background: #9c27b0;
+            border-radius: 0.3rem;
+            padding: 0.6rem 0.8rem;
+            font-size: 2.8rem;
+            line-height: 2.8rem;
+            margin: 0;
+        }
+
+        .clover {
+            height: 2.9rem;
+            width: 2.9rem;
+            margin: 0.1rem 1.1rem;
+        }
+
+        #top * {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5rem;
+        }
+
+        #bop {
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+        }
+
         #fop {
-          position: static;
-          margin-top: 5rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4rem;
+            padding-bottom: 1rem;
+            transform: scale(0.75,0.75);
         }
-        #fop img {
-          height: 3rem;
-          margin: 0 1rem;
+
+            #fop img {
+                height: 3rem;
+                margin: 0 0.6rem;
+            }
+
+                #fop img#medium {
+                    height: 3.5rem;
+                }
+
+        .dot:before {
+            content: " / ";
+            color: #9c27b0;
         }
-        #fop img#twitter {
-          height: 2.5rem;
-          margin-bottom: 0.25rem;
+
+        @media (max-width: 321px) {
+            #fop {
+                position: static;
+                margin-top: 5rem;
+            }
+
+                #fop img {
+                    height: 3rem;
+                    margin: 0 1rem;
+                }
+
+                    #fop img#twitter {
+                        height: 2.5rem;
+                        margin-bottom: 0.25rem;
+                    }
         }
-      }
-      @media (min-width: 320px) {
-        html {
-          font-size: 10px;
+
+        @media (min-width: 320px) {
+            html {
+                font-size: 10px;
+            }
         }
-      }
-      @media (min-width: 320px) and (orientation: landscape) {
-        html {
-          font-size: 15px;
+
+        @media (min-width: 320px) and (orientation: landscape) {
+            html {
+                font-size: 15px;
+            }
         }
-      }
-      @media (min-width: 589px) {
-        html {
-          font-size: 20px;
+
+        @media (min-width: 589px) {
+            html {
+                font-size: 20px;
+            }
         }
-      }
-      @media (min-width: 733px) {
-        html {
-          font-size: 25px;
+
+        @media (min-width: 733px) {
+            html {
+                font-size: 25px;
+            }
         }
-      }
-      @media (min-width: 870px) {
-        html {
-          font-size: 30px;
+
+        @media (min-width: 870px) {
+            html {
+                font-size: 30px;
+            }
         }
-      }
     </style>
-  </head>
-  <body>
-    <center id='top'><h1>Max&nbsp;Howell</h1></center>
-    <center id='bop'>Developer<span class='dot'></span>Designer<span class='dot'></span>Splendid Chap</center>
-    <center id='fop'><a href='https://github.com/mxcl'><img src='github.png'></a><a href='https://twitter.com/mxcl'><img src='twitter.png' id='twitter'></a><a href='https://www.linkedin.com/in/maxhowell'><img src='linkedin.png'></a></center>
-  </body>
+</head>
+<body>
+    <center id='top'><h1>Hack&nbsp;in Rio</h1></center>
+    <center id='bop'>Financial Tools<span class='dot'></span>Process Automation</center>
+    <center id='fop'>
+        <a href='https://github.com/hackinrio'><img src='github.png'></a>
+        <a href='https://medium.hackintio.com'><img src='medium.png' id='medium'></a>
+        <a href='https://twitter.com/hackinrio'><img src='twitter.png'></a>
+    </center>
+</body>
 </html>
