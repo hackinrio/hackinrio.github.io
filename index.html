@@ -7,21 +7,40 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300">
     <style>
         html {
-            /* google material color: purple 300 */
-            background: #BA68C8;
+            /* google material color: purple 500 */
+            background: #9C27B0;
             color: white;
             font-family: 'Raleway', sans-serif;
             text-transform: uppercase;
+            font-size: 30px;
         }
 
         h1 {
-            /* google material color: purple 500 */
-            background: #9c27b0;
+            /* google material color: lime 500 */
+            background: #CDDC39;
             border-radius: 0.3rem;
             padding: 0.6rem 0.8rem;
             font-size: 2.8rem;
             line-height: 2.8rem;
             margin: 0;
+        }
+
+        .pulse-effect {
+            border: 12px solid #CDDC39;
+            -webkit-border-radius: 100px;
+            height: 130px;
+            width: 130px;
+            position: absolute;
+            z-index: -10;
+            margin-top: -30px;
+            margin-left: -140px;
+            -webkit-animation: pulsate 1.2s ease-out;
+            -webkit-animation-iteration-count: infinite; 
+        }
+        @-webkit-keyframes pulsate {
+            0% {-webkit-transform: scale(0.3, 0.3); opacity: 0.0;}
+            50% {opacity: 1.0;}
+            100% {-webkit-transform: scale(1.0, 1.0); opacity: 0.0;}
         }
 
         .clover {
@@ -57,12 +76,12 @@
             }
 
                 #fop img#medium {
-                    height: 3.5rem;
+                    /*height: 3.5rem;*/
                 }
 
         .dot:before {
             content: " / ";
-            color: #9c27b0;
+            color: #CDDC39;
         }
 
         @media (max-width: 321px) {
@@ -82,7 +101,7 @@
                     }
         }
 
-        @media (min-width: 320px) {
+        /*@media (min-width: 320px) {
             html {
                 font-size: 10px;
             }
@@ -110,7 +129,7 @@
             html {
                 font-size: 30px;
             }
-        }
+        }*/
     </style>
 </head>
 <body>
@@ -118,7 +137,7 @@
     <center id='bop'>Financial Tools<span class='dot'></span>Process Automation</center>
     <center id='fop'>
         <a href='https://github.com/hackinrio'><img src='github.png'></a>
-        <a href='https://medium.hackinrio.com'><img src='medium.png' id='medium'></a>
+        <a href='https://medium.hackinrio.com'><img src='medium.png' id='medium'><span class="pulse-effect"></span></a>
         <a href='https://twitter.com/hackinrio'><img src='twitter.png'></a>
     </center>
 </body>
