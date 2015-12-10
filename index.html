@@ -3,7 +3,7 @@
 <head>
     <title>Hack in Rio</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300">
     <style>
         html {
@@ -25,22 +25,22 @@
             margin: 0;
         }
 
-        .pulse-effect {
-            border: 12px solid #CDDC39;
-            -webkit-border-radius: 100px;
-            height: 130px;
-            width: 130px;
-            position: absolute;
-            z-index: -10;
-            margin-top: -30px;
-            margin-left: -140px;
-            -webkit-animation: pulsate 1.2s ease-out;
-            -webkit-animation-iteration-count: infinite; 
-        }
+        /* Pulse effect */
         @-webkit-keyframes pulsate {
             0% {-webkit-transform: scale(0.3, 0.3); opacity: 0.0;}
-            50% {opacity: 1.0;}
-            100% {-webkit-transform: scale(1.0, 1.0); opacity: 0.0;}
+            30% {opacity: 1.0;}
+            60% {-webkit-transform: scale(70.0, 70.0); opacity: 0.0;}
+            100% {-webkit-transform: scale(0.3, 0.3); opacity: 0.0;}
+        }
+        .pulse-effect {
+            border: 1px solid #CDDC39;
+            -webkit-border-radius: 100px;
+            position: absolute;
+            margin-left: -40px;
+            margin-top: 30px;
+            z-index: -10;
+            -webkit-animation: pulsate 1.8s ease-out;
+            -webkit-animation-iteration-count: infinite; 
         }
 
         .clover {
@@ -61,75 +61,37 @@
         }
 
         #fop {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
             height: 4rem;
-            padding-bottom: 1rem;
-            transform: scale(0.75,0.75);
+            margin-top: 5rem;
         }
 
-            #fop img {
-                height: 3rem;
-                margin: 0 0.6rem;
-            }
-
-                #fop img#medium {
-                    /*height: 3.5rem;*/
-                }
+        #fop img {
+            height: 60px;
+            margin: 0 10px;
+        }
 
         .dot:before {
             content: " / ";
             color: #CDDC39;
         }
 
-        @media (max-width: 321px) {
-            #fop {
-                position: static;
-                margin-top: 5rem;
-            }
-
-                #fop img {
-                    height: 3rem;
-                    margin: 0 1rem;
-                }
-
-                    #fop img#twitter {
-                        height: 2.5rem;
-                        margin-bottom: 0.25rem;
-                    }
+        @media (max-width: 589px) {
+            html { font-size: 20px; }
+            #top * { margin-top: 60px; }
         }
-
-        /*@media (min-width: 320px) {
-            html {
-                font-size: 10px;
-            }
-        }
-
-        @media (min-width: 320px) and (orientation: landscape) {
-            html {
-                font-size: 15px;
-            }
-        }
-
+        
         @media (min-width: 589px) {
-            html {
-                font-size: 20px;
-            }
+            html { font-size: 26px; }
         }
 
         @media (min-width: 733px) {
-            html {
-                font-size: 25px;
-            }
+            html { font-size: 29px; }
         }
 
         @media (min-width: 870px) {
-            html {
-                font-size: 30px;
-            }
-        }*/
+            html { font-size: 32px; }
+        }
+
     </style>
 </head>
 <body>
@@ -137,7 +99,7 @@
     <center id='bop'>Financial Tools<span class='dot'></span>Process Automation</center>
     <center id='fop'>
         <a href='https://github.com/hackinrio'><img src='github.png'></a>
-        <a href='https://medium.hackinrio.com'><img src='medium.png' id='medium'><span class="pulse-effect"></span></a>
+        <a href='https://medium.hackinrio.com'><img src='medium.png'><span class="pulse-effect"></span></a>
         <a href='https://twitter.com/hackinrio'><img src='twitter.png'></a>
     </center>
 </body>
