@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Hack in Rio</title>
+    <meta name="description" content="Programming tips for financial markets.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300">
+
+    <!-- Android add to home screen -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#9C27B0">
+
+    <style>
+        html {
+            /* google material color: purple 500 */
+            background: #9C27B0;
+            color: white;
+            font-family: 'Raleway', sans-serif;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        h1 {
+            /* google material color: lime 500 */
+            background: #CDDC39;
+            border-radius: 0.3rem;
+            padding: 0.6rem 0.8rem;
+            font-size: 2.8rem;
+            line-height: 2.8rem;
+            margin: 0;
+        }
+
+        /* pulse effect */
+        @-webkit-keyframes pulsate {
+            0% {-webkit-transform: scale(0.3, 0.3); opacity: 0.0;}
+            30% {opacity: 1.0;}
+            60% {-webkit-transform: scale(70.0, 70.0); opacity: 0.0;}
+            100% {-webkit-transform: scale(0.3, 0.3); opacity: 0.0;}
+        }
+        .pulse-effect {
+            border: 1px solid #CDDC39;
+            -webkit-border-radius: 100px;
+            position: absolute;
+            margin-left: -41px;
+            margin-top: 30px;
+            z-index: -10;
+            -webkit-animation: pulsate 1.8s ease-out;
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        .clover {
+            height: 2.9rem;
+            width: 2.9rem;
+            margin: 0.1rem 1.1rem;
+        }
+
+        #top * {
+			font-size: 1.3em;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5rem;
+        }
+
+        #bop {
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+        }
+
+        #fop {
+            height: 4rem;
+            margin-top: 5rem;
+        }
+
+        #fop img {
+            height: 60px;
+            margin: 0 10px;
+        }
+
+        .dot:before {
+            content: " / ";
+            color: #CDDC39;
+        }
+
+        @media (max-width: 589px) {
+            html { font-size: 20px; }
+            #top * { margin-top: 60px; }
+        }
+
+        @media (min-width: 589px) {
+            html { font-size: 26px; }
+        }
+
+        @media (min-width: 733px) {
+            html { font-size: 29px; }
+        }
+
+        @media (min-width: 870px) {
+            html { font-size: 32px; }
+        }
+
+		#fop img {
+			border-radius: 50%;
+		}
+
+		.container {
+			max-width: 800px;
+			max-width: 80%;
+			margin: auto;
+			padding: 0 0 60px 0;
+		}
+
+		.container h4 {
+			margin-top:80px;
+			margin-bottom:0;
+		}
+
+		.container p {
+			font-size: 30px;
+			text-transform: none;
+		}
+
+    </style>
+</head>
+
+<body>
+    <center id='top'><h1>Flavio Wuensche</h1></center>
+    <center id='bop'>International Relations<span class='dot'></span>42e</center>
+    <center id='fop'>
+        <a href='https://www.linkedin.com/in/fwuensche/'>
+			<img src='https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/529119_10150909255846751_992597102_n.jpg?_nc_cat=105&_nc_ht=scontent-cdt1-1.xx&oh=83a8455e89a3796282d5ea51cea68e9e&oe=5CAD5558'>
+			<span class="pulse-effect"></span>
+		</a>
+    </center>
+
+	<center class="container">
+		<h4>Qui suis je?</h4>
+		<p>Je suis né au Brésil, j'ai fait mes études d'ingénieur à Centrale Nantes et j'ai travaillé avec le développement Web au cours des six dernières années.</p>
+		<h4>Qu'est-ce que je cherche?</h4>
+		<p>Je souhaite actuellement élargir mon réseau en France et ailleurs en rejoignant un groupe de tech-entrepreneurs très motivés.</p>
+		<h4>Que puis-je offrir?</h4>
+		<p>Je parle couramment quatre langues: portugais, espagnol, anglais et français. Au Brésil, ma startup est membre d'Endeavor, qui nous relie à plusieurs leaders au Brésil, mais sans s'y limiter. Enfin, je suis également très à l'aise avec Ruby et Rails, je pourrais donc probablement aussi contribuer à améliorer les systèmes internes à 42E.</p>
+		<h4>Que voudrais-je savoir de plus?</h4>
+		<p>Quels sont les principaux besoins de 42E au sens des relations internationales? Dans quels pays êtes-vous le plus intéressé en ce moment? Quel type de partenariat souhaitez-vous établir? À quoi ressemble le candidat idéal pour vous?</p>
+	</center>
+</body>
+</html>
